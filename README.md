@@ -40,7 +40,11 @@ docker run --name mongofastfeet -p 27017:27017 -d -t mongo
 
 ### Iniciando o Aplicativo.
 
-Agora clone este repositório e instale suas dependências:
+### Backend Fastfeet
+
+Agora clone este repositório FastFeetBackEnd e instale suas dependências:
+
+_Abra o terminal na pasta do FastFeetBackEnd e instale as dependências:_
 
 ```bash
 
