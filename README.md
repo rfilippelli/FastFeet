@@ -53,7 +53,7 @@ yarn
 
 ```
 
-Para que haja a conexão do backend colocar informações no arquivo .env, baseado que está dentro do banco de dados, usuarios e senhas do sistema.
+Para que haja a conexão do backend colocar informações no arquivo .env, baseado no que está dentro do banco de dados, usuarios e senhas do sistema.
 
 ```bash
 # rodando as migrations para o banco
