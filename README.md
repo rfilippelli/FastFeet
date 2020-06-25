@@ -1,7 +1,6 @@
 <h2 align="center">
 Este Módulo retem o Desafio Final.
-Uma aplicação completa com Back-end (NodeJs), Front-end(React) e Mobile(react Native).
-com objetivo de Certificação do Curso Rocketseat Bootcamp GoStack.
+Uma aplicação completa com Back-end (NodeJs), Front-end(React) e Mobile(React Native), com objetivo de Certificação do Curso Rocketseat Bootcamp GoStack.
 </h1>
 
 <h1 align="center">
@@ -10,36 +9,38 @@ com objetivo de Certificação do Curso Rocketseat Bootcamp GoStack.
 
 ---
 
-## :Check Mark: Para iniciar a aplicação :Check Mark:
+## Para iniciar a aplicação.
 
-### :Memo: Requerimentos
+### Requerimentos:
 
-_Para rodar a aplicação é necessário a instalação:_
+_Pré-requisitos da Aplicação:_
 
 - [Node](https://nodejs.org/)
 - [Yarn](https://yarnpkg.com/)
 
-### Base de dados da aplicação
+### Base de dados da aplicação.
 
 - [Redis](https://redis.io/)
 - [Postgres](https://github.com/postgres/postgres)
 - [MongoDB](https://www.mongodb.com/)
 
-### Foi utilizado o Container Docker (https://www.docker.com/) para os bancos de dados facilmente. Dentro dele siga estes passos:
+### Foi utilizado o Container Docker para os bancos de dados. Seguem as instruções:
 
 ```bash
-* Instalação do Redis *
+#Instalação do Redis
 docker run --name redisfastfeet -p 6379:6379 -d -t redis:alpine
 
-* Instalação do Postgres *
+#Instalação do Postgres
 docker run --name fastfeet -e POSTGRES_PASSWORD=fastfeet -p 5432:5432 -d postgres
 
+#Instalação do MongoDB
+docker run --name mongofastfeet -p 27017:27017 -d -t mongo
 
 ```
 
-### Iniciando o Aplicativo
+### Iniciando o Aplicativo.
 
-Agora clone este repositório e instale suas dependências
+Agora clone este repositório e instale suas dependências:
 
 ```bash
 
@@ -48,7 +49,7 @@ yarn
 
 ```
 
-Para que haja a conexão do backend colocar informações no arquivo .env, baseado que está dentro do backend.
+Para que haja a conexão do backend colocar informações no arquivo .env, baseado que está dentro do banco de dados, usuarios e senhas do sistema.
 
 ```bash
 # rodando as migrations para o banco
@@ -91,10 +92,6 @@ Senha: 123456
 ```bash
 # Instalar as dependências
 yarn
-```
-
-```javascript
-  baseURL: 'http://192.168.0.14:3334',
 ```
 
 _Após todas as configurações pode iniciar a aplicação._
